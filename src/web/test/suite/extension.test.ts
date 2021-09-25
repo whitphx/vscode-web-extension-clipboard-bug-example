@@ -6,10 +6,16 @@ import * as vscode from 'vscode';
 // import * as myExtension from '../../extension';
 
 suite('Web Extension Test Suite', () => {
-	vscode.window.showInformationMessage('Start all tests.');
+  vscode.window.showInformationMessage('Start all tests.');
 
-	test('Sample test', () => {
-		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
-		assert.strictEqual(-1, [1, 2, 3].indexOf(0));
-	});
+  test('Clipboard test', async () => {
+    const doc = await vscode.workspace.openTextDocument({ content: '' })
+    await vscode.window.showTextDocument(doc);
+    assert.ok(vscode.window.activeTextEditor);
+
+    vscode.env.clipboard.writeText('foo');
+    await vscode.commands.executeCommand('editor.action.clipboardPasteAction');
+    await new Promise((resolve) => setTimeout(resolve, 100));  // HACK: This delay is necessary for the clipboard text to be pasted to the editor.
+    assert.strictEqual(doc.getText(), 'foo');
+  });
 });

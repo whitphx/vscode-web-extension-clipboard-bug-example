@@ -221,10 +221,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
-"@vscode/test-web@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@vscode/test-web/-/test-web-0.0.12.tgz#0d2eda3c2740bf4c59997e7e8658f0794af2f042"
-  integrity sha512-PtmyN0SUI3iQbPgcTAQ23IFCrbSvdahY0I2KL5TlBplY3vpFOc3To497GXYuVNYG6YIA7KKDPAADLB/HIXPOPA==
+"@vscode/test-web@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@vscode/test-web/-/test-web-0.0.14.tgz#99314cf0f35fae126b7726c88aa7ee760fbd201d"
+  integrity sha512-UtQUTscSVNtRTShuWkrHP5AFOvZvZq1V4cyGs8B+d6BYbvQe5gaqGoYC3OT+m/gNFtGYwHBKj5mBUs+n54teVw==
   dependencies:
     "@koa/router" "^10.1.1"
     decompress "^4.2.1"
@@ -236,7 +236,7 @@
     koa-mount "^4.0.0"
     koa-static "^5.0.0"
     minimist "^1.2.5"
-    playwright "^1.14.1"
+    playwright "1.14.1"
     vscode-uri "^3.0.2"
 
 "@webassemblyjs/ast@1.11.1":
@@ -2331,10 +2331,10 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-playwright@^1.14.1:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.15.0.tgz#c8c75287541e75317988b973a306d2f61065aefb"
-  integrity sha512-JtagFVjNvccP1rIixHB/4KbR+BzMTJLty6mo71YLatvJR9ZH+PX8DLlhw1KDdIH2YGMSQGf2ihh4KAp9tsklxQ==
+playwright@1.14.1:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.14.1.tgz#73913d3044a85a58edf13148245279231072532e"
+  integrity sha512-JYNjhwWcfsBkg0FMGLbFO9e58FVdmICE4k97/glIQV7cBULL7oxNjRQC7Ffe+Y70XVNnP0HSJLaA0W5SukyftQ==
   dependencies:
     commander "^6.1.0"
     debug "^4.1.1"
