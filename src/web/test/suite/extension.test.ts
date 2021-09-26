@@ -15,7 +15,7 @@ suite('Web Extension Test Suite', () => {
 
     vscode.env.clipboard.writeText('foo');
     await vscode.commands.executeCommand('editor.action.clipboardPasteAction');
-    await new Promise((resolve) => setTimeout(resolve, 100));  // HACK: This delay is necessary for the clipboard text to be pasted to the editor.
+    // await new Promise((resolve) => setTimeout(resolve, 100));  // HACK: This delay is necessary for the clipboard text to be pasted to the editor.
     assert.strictEqual(doc.getText(), 'foo');
   });
 });
